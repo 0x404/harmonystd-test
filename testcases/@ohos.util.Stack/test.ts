@@ -118,6 +118,7 @@ function test_locate2(loopCount: number) {
   console.log(`!${test_id}: ${averageTime} ms`);
 }
 
+//!end
 test_push(500000);
 test_pop(500000);
 test_peek(5000000)
