@@ -1,7 +1,11 @@
-site_name: OpenHarmony Stand Library Tests
+site_name: ArkTS标准库性能测试
 theme:
   language: zh
   name: material
+  logo: assets/arkts.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
