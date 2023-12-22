@@ -3,6 +3,7 @@ theme:
   language: zh
   name: material
   logo: assets/arkts.png
+  favicon: assets/arkts.png
   features:
     - navigation.instant
     - navigation.instant.progress
