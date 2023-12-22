@@ -20,9 +20,9 @@ function test_add(loopCount: number) {
 ```
 :joystick: 测试结果
 
-| 测试用例   | 测试平台         | 运行时间        |
-|:-------|:-------------|:------------|
-| 测试用例 1 | Huawei Phone | 0.000192 ms |
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.000192 ms |
 
 ### @ohos.util.Vector.has
 
@@ -66,8 +66,10 @@ function test_has2(loopCount: number) {
 ```
 :joystick: 测试结果
 
-| 测试用例   | 测试平台         | 运行时间        |
-|:-------|:-------------|:------------|
-| 测试用例 1 | Huawei Phone | 0.463000 ms |
-| 测试用例 2 | Huawei Phone | 0.000333 ms |
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.463000 ms |
+| 测试用例 2 | [Huawei Phone] | 0.000333 ms |
 
+[Huawei Phone]: ../../device/#huawei-phone
+[Huawei Watch]: ../../device/#huawei-watch

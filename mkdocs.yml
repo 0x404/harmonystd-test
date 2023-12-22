@@ -1,17 +1,22 @@
-site_name: OpenHarmony Stand Library Tests
+site_name: ArkTS标准库性能测试
 theme:
   language: zh
   name: material
+  logo: assets/arkts.png
+  favicon: assets/arkts.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
+      primary: light blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
+      primary: light blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
