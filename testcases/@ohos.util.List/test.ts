@@ -1,6 +1,6 @@
 import List from '@ohos.util.List';
 
- function test_add(loopCount: number) {
+function test_add(loopCount: number) {
   // test: @ohos.util.List
   // desc: 测试List容器add接口
   const test_id = 1;
@@ -66,7 +66,7 @@ function test_has(loopCount: number) {
   console.log(`!${test_id}: ${averageTime} ms`);
 }
 
- function test_has2(loopCount: number) {
+function test_has2(loopCount: number) {
   // test: @ohos.util.List.has
   // desc: 测试在最优情况下（查找元素为第一个）List容器的has接口，List长度为5000000
   const test_id = 4;
