@@ -90,6 +90,7 @@ function test_has2(loopCount: number) {
   console.log(`!${test_id}: ${averageTime} ms`);
 }
 
+//!end
 test_add(500000);
 test_insert(50000);
 test_has(3000);
