@@ -1,7 +1,7 @@
 import List from '@ohos.util.List';
 
 function test_add(loopCount: number) {
-  // test: @ohos.util.List
+  // test: @ohos.util.List.add
   // desc: 测试List容器add接口
   const test_id = 1;
 
