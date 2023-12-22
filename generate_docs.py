@@ -63,7 +63,7 @@ class APITest:
         for case in test_cases:
             for result in case.results:
                 result.normalize_time()
-                table.append([f"测试用例 {case.subid}", result.platform, result.time])
+                table.append([f"测试用例 {case.subid}", f"[{result.platform}]", result.time])
 
         return tabulate(table, headers=headers, tablefmt="pipe")
 
@@ -189,11 +189,14 @@ def generate_api_test_file(dir: str, name: str):
     for result in results_file:
         resolve_result_file(os.path.join(dir, result), apitest_list)
 
-    with open(f"./docs/{name}.md", "w", encoding="utf-8") as mdf:
+    os.makedirs("./docs/标准库接口测试", exist_ok=True)
+    with open(f"./docs/标准库接口测试/{name}.md", "w", encoding="utf-8") as mdf:
         mdf.write(f"# {name}\n")
         for apitest in apitest_list:
             mdf.write(apitest.render_markdown())
             mdf.write("\n")
+        mdf.write(f"[Huawei Phone]: ../../device/#huawei-phone\n")
+        mdf.write(f"[Huawei Watch]: ../../device/#huawei-watch\n")
 
 
 def main():
@@ -201,12 +204,12 @@ def main():
     for api in api_documents:
         generate_api_test_file(os.path.join("./testcases", api), api)
     with open("./docs/index.md", "w", encoding="utf-8") as indexf:
-        indexf.write(f"# OpenHarmony Standard Library Tests\n")
+        indexf.write(f"# 首页\n\n## 标准库接口测试 \n\n")
         for api in api_documents:
             indexf.write(f"- [{api}]\n")
         indexf.write("\n\n")
         for api in api_documents:
-            indexf.write(f"[{api}]: {api}.md\n")
+            indexf.write(f"[{api}]: 标准库接口测试/{api}.md\n")
         
 
 
