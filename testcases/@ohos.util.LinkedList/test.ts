@@ -1,7 +1,7 @@
 import LinkedList from '@ohos.util.LinkedList';
 
 function test_add(loopCount: number) {
-  // test: @ohos.util.linkedlist.add
+  // test: @ohos.util.LinkedList.add
   // desc: 测试LinkedList容器add方法
   const test_id = 1;
 
@@ -23,7 +23,7 @@ function test_add(loopCount: number) {
 
 
 function test_addFirst(loopCount: number) {
-  // test: @ohos.util.linkedlist.addFirst
+  // test: @ohos.util.LinkedList.addFirst
   // desc: 测试LinkedList容器addFirst方法
   const test_id = 2;
 
@@ -45,7 +45,7 @@ function test_addFirst(loopCount: number) {
 
 
 function test_insert(loopCount: number) {
-  // test: @ohos.util.linkedlist.insert
+  // test: @ohos.util.LinkedList.insert
   // desc: 测试LinkedList容器insert方法
   const test_id = 3;
 
@@ -71,7 +71,7 @@ function test_insert(loopCount: number) {
 
 
 function test_has(loopCount: number) {
-  // test: @ohos.util.linkedlist.has
+  // test: @ohos.util.LinkedList.has
   // desc: 测试LinkedList容器has方法
 
   const test_id = 4;
@@ -98,7 +98,7 @@ function test_has(loopCount: number) {
 
 
 function test_get(loopCount: number) {
-  // test: @ohos.util.linkedlist.get
+  // test: @ohos.util.LinkedList.get
   // desc: 测试LinkedList容器get方法
 
   const test_id = 5;
@@ -123,6 +123,7 @@ function test_get(loopCount: number) {
   console.log(`!${test_id}: ${averageTime} ms`);
 }
 
+//!ends
 
 // 运行测试函数
 test_add(500000);

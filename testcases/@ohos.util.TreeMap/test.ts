@@ -1,7 +1,7 @@
 import TreeMap from '@ohos.util.TreeMap';
 
 function test_set(loopCount: number) {
-  // test: @ohos.util.TreeMap
+  // test: @ohos.util.TreeMap.set
   // desc: 测试TreeMap容器set接口
   const test_id = 1;
 
@@ -22,7 +22,7 @@ function test_set(loopCount: number) {
 }
 
 function test_hasKey(loopCount: number) {
-  // test: @ohos.util.TreeMap
+  // test: @ohos.util.TreeMap.hasKey
   // desc: 测试TreeMap容器hasKey接口
   const test_id = 2;
 
@@ -46,7 +46,7 @@ function test_hasKey(loopCount: number) {
 }
 
 function test_hasValue(loopCount: number) {
-  // test: @ohos.util.TreeMap
+  // test: @ohos.util.TreeMap.hasValue
   // desc: 测试TreeMap容器hasValue接口
   const test_id = 3;
 
@@ -71,7 +71,7 @@ function test_hasValue(loopCount: number) {
 
 
 function test_remove(loopCount: number) {
-  // test: @ohos.util.TreeMap
+  // test: @ohos.util.TreeMap.remove
   // desc: 测试TreeMap容器remove接口
   const test_id = 4;
 
@@ -95,7 +95,7 @@ function test_remove(loopCount: number) {
 }
 
 function test_replace(loopCount: number) {
-  // test: @ohos.util.TreeMap
+  // test: @ohos.util.TreeMap.replace
   // desc: 测试TreeMap容器replace接口
   const test_id = 5;
 
@@ -118,6 +118,8 @@ function test_replace(loopCount: number) {
   console.log(`!${test_id}: ${averageTime} ms`);
 }
 
+
+//!ends
 test_set(3000);
 test_hasKey(3000);
 test_hasValue(3000);

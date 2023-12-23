@@ -1,7 +1,7 @@
 import TreeSet  from '@ohos.util.TreeSet';
 
 function test_has(loopCount: number) {
-  // test: @ohos.util.TreeSet
+  // test: @ohos.util.TreeSet.has
   // desc: 测试TreeSet容器has接口
   const test_id = 1;
 
@@ -27,7 +27,7 @@ function test_has(loopCount: number) {
 }
 
 function test_add(loopCount: number) {
-  // test: @ohos.util.TreeSet
+  // test: @ohos.util.TreeSet.add
   // desc: 测试TreeSet容器add接口
   const test_id = 2;
 
@@ -49,7 +49,7 @@ function test_add(loopCount: number) {
 
 
 function test_remove(loopCount: number) {
-  // test: @ohos.util.TreeSet
+  // test: @ohos.util.TreeSet.remove
   // desc: 测试TreeSet容器remove接口
   const test_id = 3;
 
@@ -73,6 +73,8 @@ function test_remove(loopCount: number) {
   const averageTime = executionTime / loopCount;
   console.log(`!${test_id}: ${averageTime} ms`);
 }
+
+//!ends
 
 test_add(500000);
 test_has(3000);
