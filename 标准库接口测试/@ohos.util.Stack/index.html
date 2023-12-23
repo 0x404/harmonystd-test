@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%40ohos.util.List/">
+        <link rel="prev" href="../%40ohos.util.PlainArray/">
       
       
-        <link rel="next" href="../%40ohos.util.Vector/">
+        <link rel="next" href="../%40ohos.util.TreeMap/">
       
       
       <link rel="icon" href="../../assets/arkts.png">
@@ -370,11 +370,53 @@
   
   
     <li class="md-nav__item">
+      <a href="../%40ohos.util.LinkedList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    @ohos.util.LinkedList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../%40ohos.util.List/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     @ohos.util.List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%40ohos.util.PlainArray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    @ohos.util.PlainArray
   </span>
   
 
@@ -437,18 +479,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstackpeek" class="md-nav__link">
+  <a href="#ohosutilstacklocate" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.peek
+      @ohos.util.Stack.locate
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstacklocate" class="md-nav__link">
+  <a href="#ohosutilstackpop" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.locate
+      @ohos.util.Stack.pop
     </span>
   </a>
   
@@ -464,9 +506,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstackpop" class="md-nav__link">
+  <a href="#ohosutilstackpeek" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.pop
+      @ohos.util.Stack.peek
     </span>
   </a>
   
@@ -476,6 +518,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%40ohos.util.TreeMap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    @ohos.util.TreeMap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%40ohos.util.TreeSet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    @ohos.util.TreeSet
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -536,18 +620,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstackpeek" class="md-nav__link">
+  <a href="#ohosutilstacklocate" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.peek
+      @ohos.util.Stack.locate
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstacklocate" class="md-nav__link">
+  <a href="#ohosutilstackpop" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.locate
+      @ohos.util.Stack.pop
     </span>
   </a>
   
@@ -563,9 +647,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilstackpop" class="md-nav__link">
+  <a href="#ohosutilstackpeek" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.Stack.pop
+      @ohos.util.Stack.peek
     </span>
   </a>
   
@@ -590,41 +674,6 @@
 
 
 <h1 id="ohosutilstack">@ohos.util.Stack</h1>
-<h3 id="ohosutilstackpeek">@ohos.util.Stack.peek</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__peek">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Stack容器peek接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_peek</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">){</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Stack</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">stack</span><span class="p">.</span><span class="nx">peek</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000060 ms</td>
-</tr>
-</tbody>
-</table>
 <h3 id="ohosutilstacklocate">@ohos.util.Stack.locate</h3>
 <p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__locate">官方API文档</a></p>
 <p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试在最坏情况下（查找元素不存在的情况）Stack容器的locate接口，Stack长度为100000 </p>
@@ -681,38 +730,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ohosutilstackpush">@ohos.util.Stack.push</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__push">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Stack容器push接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_push</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Stack</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000128 ms</td>
-</tr>
-</tbody>
-</table>
 <h3 id="ohosutilstackpop">@ohos.util.Stack.pop</h3>
 <p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__pop">官方API文档</a></p>
 <p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Stack容器pop接口 </p>
@@ -745,6 +762,73 @@
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
 <td style="text-align: left;">0.000064 ms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ohosutilstackpush">@ohos.util.Stack.push</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__push">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Stack容器push接口 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_push</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Stack</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
+<td style="text-align: left;">0.000128 ms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ohosutilstackpeek">@ohos.util.Stack.peek</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__peek">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Stack容器peek接口 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_peek</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">){</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Stack</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">5000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">stack</span><span class="p">.</span><span class="nx">peek</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
+<td style="text-align: left;">0.000060 ms</td>
 </tr>
 </tbody>
 </table>

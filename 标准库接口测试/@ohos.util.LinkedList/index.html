@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%40ohos.util.Deque/">
+        <link rel="prev" href="../%40ohos.util.HashMap/">
       
       
-        <link rel="next" href="../%40ohos.util.LinkedList/">
+        <link rel="next" href="../%40ohos.util.List/">
       
       
       <link rel="icon" href="../../assets/arkts.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>@ohos.util.HashMap - ArkTS标准库性能测试</title>
+        <title>@ohos.util.LinkedList - ArkTS标准库性能测试</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ohosutilhashmap" class="md-skip">
+        <a href="#ohosutillinkedlist" class="md-skip">
           跳转至
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              @ohos.util.HashMap
+              @ohos.util.LinkedList
             
           </span>
         </div>
@@ -346,6 +346,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%40ohos.util.HashMap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    @ohos.util.HashMap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -362,7 +383,7 @@
           
   
   <span class="md-ellipsis">
-    @ohos.util.HashMap
+    @ohos.util.LinkedList
   </span>
   
 
@@ -373,7 +394,7 @@
         
   
   <span class="md-ellipsis">
-    @ohos.util.HashMap
+    @ohos.util.LinkedList
   </span>
   
 
@@ -395,36 +416,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmapget" class="md-nav__link">
+  <a href="#ohosutillinkedlistadd" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.get
+      @ohos.util.LinkedList.add
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmapset" class="md-nav__link">
+  <a href="#ohosutillinkedlisthas" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.set
+      @ohos.util.LinkedList.has
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmaphaskey" class="md-nav__link">
+  <a href="#ohosutillinkedlistget" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.hasKey
+      @ohos.util.LinkedList.get
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmaphasvalue" class="md-nav__link">
+  <a href="#ohosutillinkedlistaddfirst" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.hasValue
+      @ohos.util.LinkedList.addFirst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ohosutillinkedlistinsert" class="md-nav__link">
+    <span class="md-ellipsis">
+      @ohos.util.LinkedList.insert
     </span>
   </a>
   
@@ -434,27 +464,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%40ohos.util.LinkedList/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    @ohos.util.LinkedList
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -620,36 +629,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmapget" class="md-nav__link">
+  <a href="#ohosutillinkedlistadd" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.get
+      @ohos.util.LinkedList.add
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmapset" class="md-nav__link">
+  <a href="#ohosutillinkedlisthas" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.set
+      @ohos.util.LinkedList.has
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmaphaskey" class="md-nav__link">
+  <a href="#ohosutillinkedlistget" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.hasKey
+      @ohos.util.LinkedList.get
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutilhashmaphasvalue" class="md-nav__link">
+  <a href="#ohosutillinkedlistaddfirst" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.HashMap.hasValue
+      @ohos.util.LinkedList.addFirst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ohosutillinkedlistinsert" class="md-nav__link">
+    <span class="md-ellipsis">
+      @ohos.util.LinkedList.insert
     </span>
   </a>
   
@@ -673,18 +691,87 @@
   
 
 
-<h1 id="ohosutilhashmap">@ohos.util.HashMap</h1>
-<h3 id="ohosutilhashmapget">@ohos.util.HashMap.get</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__get">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试HashMap容器get接口 </p>
+<h1 id="ohosutillinkedlist">@ohos.util.LinkedList</h1>
+<h3 id="ohosutillinkedlistadd">@ohos.util.LinkedList.add</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__add">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试LinkedList容器add方法 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_add</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">linkedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">LinkedList</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Element</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 在链表尾部插入元素</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
+<td style="text-align: left;">0.001264 ms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ohosutillinkedlisthas">@ohos.util.LinkedList.has</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__has">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试LinkedList容器has方法 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_has</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">linkedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">LinkedList</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Element</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 向链表尾部插入元素</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">elementToFind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Element</span><span class="si">${</span><span class="nx">loopCount</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span><span class="w"> </span><span class="c1">// 在链表中间位置插入的元素</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">elementToFind</span><span class="p">);</span><span class="w"> </span><span class="c1">// 判断链表是否含有指定元素</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
+<td style="text-align: left;">0.057000 ms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ohosutillinkedlistget">@ohos.util.LinkedList.get</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__get">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试LinkedList容器get方法 </p>
 <p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_get</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">linkedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">LinkedList</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Element</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 向链表尾部插入元素</span>
 <span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">indexToGet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">loopCount</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// 获取链表中间位置的元素</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">indexToGet</span><span class="p">);</span><span class="w"> </span><span class="c1">// 根据索引获取链表中的元素</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
@@ -705,18 +792,18 @@
 <tr>
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000163 ms</td>
+<td style="text-align: left;">0.000064 ms</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ohosutilhashmapset">@ohos.util.HashMap.set</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__set">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试HashMap容器set接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_set</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<h3 id="ohosutillinkedlistaddfirst">@ohos.util.LinkedList.addFirst</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__addFirst">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试LinkedList容器addFirst方法 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_addFirst</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">linkedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">LinkedList</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">addFirst</span><span class="p">(</span><span class="sb">`Element</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 在链表头部插入元素</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
@@ -737,37 +824,22 @@
 <tr>
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000610 ms</td>
+<td style="text-align: left;">0.000798 ms</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ohosutilhashmaphaskey">@ohos.util.HashMap.hasKey</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__hasKey">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试HashMap容器的hasKey接口（最好情况），HashMap长度为1000000 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_hasKey1</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="mf">1</span><span class="p">)</span>
+<h3 id="ohosutillinkedlistinsert">@ohos.util.LinkedList.insert</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__insert">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试LinkedList容器insert方法 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_insert</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">linkedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">LinkedList</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Element</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 向链表尾部插入元素</span>
 <span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">indexToInsert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">loopCount</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// 在链表中间位置插入元素</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">hasKey</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 2: 测试HashMap容器的hasKey接口（最坏情况），HashMap长度为1000000 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_hasKey2</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="mf">1</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">hasKey</span><span class="p">(</span><span class="mf">1000000</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">linkedList</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">indexToInsert</span><span class="p">,</span><span class="w"> </span><span class="sb">`NewElement</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 在指定索引位置插入元素</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
@@ -788,68 +860,7 @@
 <tr>
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000071 ms</td>
-</tr>
-<tr>
-<td style="text-align: left;">测试用例 2</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000073 ms</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ohosutilhashmaphasvalue">@ohos.util.HashMap.hasValue</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__hasValue">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Hashmap容器的hasValue接口（最好情况），HashMap长度为1000000 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_hasValue1</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="nx">i</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">hasValue</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 2: 测试Hashmap容器的hasValue接口（最坏情况），HashMap长度为1000000 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_hasValue2</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">hashMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HashMap</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1000000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="nx">i</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hashMap</span><span class="p">.</span><span class="nx">hasValue</span><span class="p">(</span><span class="mf">1000000</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">21.393333 ms</td>
-</tr>
-<tr>
-<td style="text-align: left;">测试用例 2</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">23.966667 ms</td>
+<td style="text-align: left;">0.001480 ms</td>
 </tr>
 </tbody>
 </table>
