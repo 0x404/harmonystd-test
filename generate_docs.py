@@ -22,6 +22,9 @@ ArkTS_API_URL_MAP = {
     "@ohos.util.Queue": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045",
     "@ohos.util.Stack": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397",
     "@ohos.util.Vector": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906",
+    "@ohos.util.PlainArray": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470",
+    "@ohos.util.TreeMap": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482",
+    "@ohos.util.TreeSet": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293",
 }
 
 
