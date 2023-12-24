@@ -7,6 +7,8 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
+    - search.suggest
+    - search.highlight
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -38,3 +40,5 @@ markdown_extensions:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
     - tables
+plugins:
+  - search
