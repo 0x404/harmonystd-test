@@ -45,7 +45,7 @@ function test_remove(loopCount: number) {
 }
 
 function test_has(loopCount: number) {
-  // test: @ohos.util.List.has
+  // test: @ohos.util.HashSet.has
   // desc: 测试在最坏情况下（查找元素不存在的情况）HashSet容器的has接口，set长度为500000
   const test_id = 3;
 
@@ -69,7 +69,7 @@ function test_has(loopCount: number) {
 }
 
 function test_has2(loopCount: number) {
-  // test: @ohos.util.List.has
+  // test: @ohos.util.HashSet.has
   // desc: 测试在最优情况下（查找元素为第一个）HashSet容器的has接口，set长度为5000000
   const test_id = 4;
 
