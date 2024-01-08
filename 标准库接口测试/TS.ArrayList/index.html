@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%40ohos.util.TreeMap/">
+        <link rel="prev" href="../%40ohos.util.Vector/">
       
       
-        <link rel="next" href="../%40ohos.util.Vector/">
+        <link rel="next" href="../TS.HashMap/">
       
       
       <link rel="icon" href="../../assets/arkts.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>@ohos.util.TreeSet - ArkTS标准库性能测试</title>
+        <title>TS.ArrayList - ArkTS标准库性能测试</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ohosutiltreeset" class="md-skip">
+        <a href="#tsarraylist" class="md-skip">
           跳转至
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              @ohos.util.TreeSet
+              TS.ArrayList
             
           </span>
         </div>
@@ -514,30 +514,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    @ohos.util.TreeSet
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%40ohos.util.TreeSet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,53 +526,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ohosutiltreesetadd" class="md-nav__link">
-    <span class="md-ellipsis">
-      @ohos.util.TreeSet.add
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ohosutiltreesetremove" class="md-nav__link">
-    <span class="md-ellipsis">
-      @ohos.util.TreeSet.remove
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ohosutiltreesethas" class="md-nav__link">
-    <span class="md-ellipsis">
-      @ohos.util.TreeSet.has
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -623,10 +556,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../TS.ArrayList/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TS.ArrayList
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -635,6 +588,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arrayprototypesplice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array.prototype.splice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrayprototypeincludes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array.prototype.includes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrayprototypepush" class="md-nav__link">
+    <span class="md-ellipsis">
+      Array.prototype.push
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -716,27 +716,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ohosutiltreesetadd" class="md-nav__link">
+  <a href="#arrayprototypesplice" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.TreeSet.add
+      Array.prototype.splice
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutiltreesetremove" class="md-nav__link">
+  <a href="#arrayprototypeincludes" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.TreeSet.remove
+      Array.prototype.includes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ohosutiltreesethas" class="md-nav__link">
+  <a href="#arrayprototypepush" class="md-nav__link">
     <span class="md-ellipsis">
-      @ohos.util.TreeSet.has
+      Array.prototype.push
     </span>
   </a>
   
@@ -760,21 +760,20 @@
   
 
 
-<h1 id="ohosutiltreeset">@ohos.util.TreeSet</h1>
-<h3 id="ohosutiltreesetadd">@ohos.util.TreeSet.add</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__add">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试TreeSet容器add接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_add</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">treeset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TreeSet</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">treeset</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<h1 id="tsarraylist">TS.ArrayList</h1>
+<h3 id="arrayprototypesplice">Array.prototype.splice</h3>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试原生数组splice接口用于插入元素 </p>
+<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_array_splice_insert</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">list</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">list</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
 </code></pre></div>
 <img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
 <table>
@@ -788,28 +787,37 @@
 <tbody>
 <tr>
 <td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000540 ms</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.002620 ms</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ohosutiltreesetremove">@ohos.util.TreeSet.remove</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__remove">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试TreeSet容器remove接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_remove</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">treeset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TreeSet</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">500000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">treeset</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<h3 id="arrayprototypeincludes">Array.prototype.includes</h3>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试在最坏情况下（查找元素不存在的情况）原生数组的includes接口，数组长度为500000 </p>
+<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_array_includes_worst</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">.</span><span class="kr">from</span><span class="p">({</span><span class="w"> </span><span class="nx">length</span><span class="o">:</span><span class="w"> </span><span class="kt">500000</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">list</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">500000</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">treeset</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</code></pre></div>
+<img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 2: 测试在最优情况下（查找元素为第一个）原生数组的includes接口，数组长度为500000 </p>
+<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_array_includes_best</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">.</span><span class="kr">from</span><span class="p">({</span><span class="w"> </span><span class="nx">length</span><span class="o">:</span><span class="w"> </span><span class="kt">500000</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">list</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
 </code></pre></div>
 <img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
 <table>
@@ -823,28 +831,29 @@
 <tbody>
 <tr>
 <td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000667 ms</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.376333 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">测试用例 2</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.000001 ms</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ohosutiltreesethas">@ohos.util.TreeSet.has</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__has">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试TreeSet容器has接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_has</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">treeset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TreeSet</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">500000</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">treeset</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<h3 id="arrayprototypepush">Array.prototype.push</h3>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试原生数组push接口 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_array_push</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">list</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">treeset</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="mf">500000</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
 </code></pre></div>
 <img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
 <table>
@@ -858,8 +867,8 @@
 <tbody>
 <tr>
 <td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.000000 ms</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.000016 ms</td>
 </tr>
 </tbody>
 </table>
