@@ -25,6 +25,8 @@ ArkTS_API_URL_MAP = {
     "@ohos.util.PlainArray": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470",
     "@ohos.util.TreeMap": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482",
     "@ohos.util.TreeSet": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293",
+    "@ohos.util.ArrayList": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842",
+    "@ohos.util.HashSet": "https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325",
 }
 
 
@@ -42,7 +44,7 @@ class TestResult:
 class TestCase:
     id: int
     target: str
-    description: str    
+    description: str
     code: str
     results: list[TestResult] = None
     subid: int = 0
@@ -66,13 +68,17 @@ class APITest:
         for case in test_cases:
             for result in case.results:
                 result.normalize_time()
-                table.append([f"测试用例 {case.subid}", f"[{result.platform}]", result.time])
+                table.append(
+                    [f"测试用例 {case.subid}", f"[{result.platform}]", result.time]
+                )
 
         return tabulate(table, headers=headers, tablefmt="pipe")
 
     def render_markdown(self):
         rstr = f"### {self.target}\n\n"
-        rstr += f"{icon('book')} [官方API文档]({resolve_api_url(self.target)})\n\n"
+
+        if api_url := resolve_api_url(self.target) is not None:
+            rstr += f"{icon('book')} [官方API文档]({resolve_api_url(self.target)})\n\n"
 
         self.test_cases.sort(key=lambda t: t.subid)
         for case in self.test_cases:
@@ -84,7 +90,8 @@ class APITest:
 
 
 def resolve_api_url(api: str):
-    assert api.startswith("@ohos.util")
+    if not api.startswith("@ohos.util"):
+        return None
     test_class = ".".join(api.split(".")[:-1])
     method = api.split(".")[-1]
     if test_class not in ArkTS_API_URL_MAP:
@@ -101,7 +108,10 @@ def resolve_test_case(code: str):
     for line in code_lines:
         line = line.strip()
         if line.startswith("// test:"):
-            target = line[line.find("@"):].strip()
+            if "@" in line:
+                target = line[line.find("@") :].strip()
+            else:
+                target = line.lstrip("// test:")
         if line.startswith("// desc:"):
             description = line.strip("// desc:")
         if line.startswith("const test_id ="):
@@ -146,7 +156,7 @@ def resolve_arkts_file(test_dir: str):
             status = 1
             start_index = index
         index += 1
-    
+
     test_cases = [resolve_test_case(case) for case in test_cases]
     apiset = set(case.target for case in test_cases)
     apitest_list = []
@@ -166,11 +176,11 @@ def resolve_result_file(file: str, apitest_list: list[APITest]):
     platform = Path(file).stem
     with open(file, "r") as f:
         log = f.read()
-    pattern = r"JsApp: !(.*?ms)"
+    pattern = r"(?:JsApp: )?!(\d+): (\d+(?:\.\d+)?(?:e-\d+)?) ms"
     matches = re.findall(pattern, log)
 
     for result in matches:
-        test_id, test_reuslt = result.split(":")
+        test_id, test_reuslt = result
         test_id = int(test_id)
         for apitest in apitest_list:
             for testcase in apitest.test_cases:
@@ -187,7 +197,6 @@ def generate_api_test_file(dir: str, name: str):
     assert len(arkts_file) == 1
     apitest_list: list[APITest] = resolve_arkts_file(dir)
 
-
     results_file = [file for file in files if file.endswith(".log")]
     for result in results_file:
         resolve_result_file(os.path.join(dir, result), apitest_list)
@@ -200,20 +209,38 @@ def generate_api_test_file(dir: str, name: str):
             mdf.write("\n")
         mdf.write(f"[Huawei Phone]: ../../device/#huawei-phone\n")
         mdf.write(f"[Huawei Watch]: ../../device/#huawei-watch\n")
+        mdf.write(f"[node]: ../../device/#typescript")
 
 
-def main():
-    api_documents = os.listdir("./testcases")
+def generate_arkts_docs(doc_root: str):
+    api_documents = os.listdir(doc_root)
     for api in api_documents:
-        generate_api_test_file(os.path.join("./testcases", api), api)
+        generate_api_test_file(os.path.join(doc_root, api), api)
     with open("./docs/index.md", "w", encoding="utf-8") as indexf:
-        indexf.write(f"# 首页\n\n## 标准库接口测试 \n\n")
+        indexf.write(f"# 首页\n\n## ArkTS标准库接口测试 \n\n")
         for api in api_documents:
             indexf.write(f"- [{api}]\n")
         indexf.write("\n\n")
         for api in api_documents:
             indexf.write(f"[{api}]: 标准库接口测试/{api}.md\n")
-        
+
+
+def generate_ts_docs(doc_root: str):
+    api_documents = [file for file in os.listdir(doc_root) if file.startswith("TS")]
+    for api in api_documents:
+        generate_api_test_file(os.path.join(doc_root, api), api)
+    with open("./docs/index.md", "a", encoding="utf-8") as indexf:
+        indexf.write("## TypeScript标准库测试 \n\n")
+        for api in api_documents:
+            indexf.write(f"- [{api}]\n")
+        indexf.write("\n\n")
+        for api in api_documents:
+            indexf.write(f"[{api}]: 标准库接口测试/{api}.md\n")
+
+
+def main():
+    generate_arkts_docs("./testcases_arkts")
+    generate_ts_docs("./testcases_ts")
 
 
 if __name__ == "__main__":
