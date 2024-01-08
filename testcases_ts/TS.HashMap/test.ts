@@ -1,15 +1,15 @@
-function test_set_add(loopCount: number) {
-    // test: Set.prototype.add
-    // desc: 测试Set容器add接口
+function test_map_set(loopCount: number) {
+    // test: Map.prototype.set
+    // desc: 测试Map对象的set接口
     const test_id = 1;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
+    let map = new Map<number, number>();
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.add(1);
+      map.set(i, 1);
     }
     const endTime = new Date();
   
@@ -19,21 +19,21 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_remove(loopCount: number) {
-    // test: Set.prototype.delete
-    // desc: 测试Set容器delete接口
+  function test_map_get(loopCount: number) {
+    // test: Map.prototype.get
+    // desc: 测试Map对象的get接口
     const test_id = 2;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
+    let map = new Map<number, number>();
     for (let i = 0; i < loopCount; i++) {
-      set.add(i);
+      map.set(i, 1);
     }
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.delete(i);
+      map.get(i);
     }
     const endTime = new Date();
   
@@ -43,21 +43,21 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_has_worst(loopCount: number) {
-    // test: Set.prototype.has
-    // desc: 测试在最坏情况下（查找元素不存在的情况）Set容器的has接口，set长度为500000
+  function test_map_hasKey_best(loopCount: number) {
+    // test: Map.prototype.has
+    // desc: 测试Map对象的has接口（最好情况），Map长度为1000000
     const test_id = 3;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
-    for (let i = 0; i < 500000; i++) {
-      set.add(i);
+    let map = new Map<number, number>();
+    for (let i = 0; i < 1000000; i++) {
+      map.set(i, 1)
     }
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.has(500000);
+      map.has(0)
     }
     const endTime = new Date();
   
@@ -67,21 +67,21 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_has_best(loopCount: number) {
-    // test: Set.prototype.has
-    // desc: 测试在最优情况下（查找元素为第一个）Set容器的has接口，set长度为5000000
+  function test_map_hasKey_worst(loopCount: number) {
+    // test: Map.prototype.has
+    // desc: 测试Map对象的has接口（最坏情况），Map长度为1000000
     const test_id = 4;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
-    for (let i = 0; i < 500000; i++) {
-      set.add(i);
+    let map = new Map<number, number>();
+    for (let i = 0; i < 1000000; i++) {
+      map.set(i, 1)
     }
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.has(0);
+      map.has(1000000)
     }
     const endTime = new Date();
   
@@ -91,21 +91,21 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_values(loopCount: number) {
-    // test: Set.prototype.values
-    // desc: 测试Set容器的values接口，set长度为输入的loopCount
+  function test_map_hasValue_best(loopCount: number) {
+    // test: Map.prototype.hasValue
+    // desc: 测试Map结合Array的方式模拟的hasValue接口（最好情况），Map长度为1000000
     const test_id = 5;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
-    for (let i = 0; i < loopCount; i++) {
-      set.add(i);
+    let map = new Map<number, number>();
+    for (let i = 0; i < 1000000; i++) {
+      map.set(i, i)
     }
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.values();
+      Array.from(map.values()).includes(0);
     }
     const endTime = new Date();
   
@@ -115,21 +115,21 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_entries(loopCount: number) {
-    // test: Set.prototype.entries
-    // desc: 测试Set容器的entries接口，set长度为输入的loopCount
+  function test_map_hasValue_worst(loopCount: number) {
+    // test: Map.prototype.hasValue
+    // desc: 测试Map结合Array的方式模拟的hasValue接口（最坏情况），Map长度为1000000
     const test_id = 6;
   
     // prepare: setup objects to test
-    let set = new Set<number>();
-    for (let i = 0; i < loopCount; i++) {
-      set.add(i);
+    let map = new Map<number, number>();
+    for (let i = 0; i < 1000000; i++) {
+      map.set(i, i)
     }
   
     // test
     const startTime = new Date();
     for (let i = 0; i < loopCount; i++) {
-      set.entries();
+      Array.from(map.values()).includes(1000000);
     }
     const endTime = new Date();
   
@@ -139,38 +139,12 @@ function test_set_add(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
-  function test_set_forEach(loopCount: number) {
-    // test: Set.prototype.forEach
-    // desc: 测试Set容器的forEach接口,set长度为500000
-    const test_id = 7;
-  
-    // prepare: setup objects to test
-    let set = new Set<number>();
-    for (let i = 0; i < 500000; i++) {
-      set.add(i);
-    }
-  
-    // test
-    const startTime = new Date();
-    for (let i = 0; i < loopCount; i++) {
-      set.forEach((value, key) => {
-        // 模拟处理
-      });
-    }
-    const endTime = new Date();
-  
-    // finish
-    const executionTime = endTime.getTime() - startTime.getTime();
-    const averageTime = executionTime / loopCount;
-    console.log(`!${test_id}: ${averageTime} ms`);
-  }
-  
+  //!end
   // 测试函数调用
-  test_set_add(500000);
-  test_set_remove(500000);
-  test_set_has_worst(500000);
-  test_set_has_best(500000);
-  test_set_values(500000);
-  test_set_entries(500000);
-  test_set_forEach(300);
+  test_map_set(1000000);
+  test_map_get(1000000);
+  test_map_hasKey_best(1000000);
+  test_map_hasKey_worst(1000000);
+  test_map_hasValue_best(300);
+  test_map_hasValue_worst(300);
   

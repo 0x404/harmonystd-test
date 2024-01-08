@@ -171,8 +171,8 @@ test_remove(500000);
 test_has(500000);
 test_has2(500000);
 test_values(500000);
-test_entries(500000)
-test_forEach(300)
+test_entries(500000);
+test_forEach(300);
 
 //Result
 /*

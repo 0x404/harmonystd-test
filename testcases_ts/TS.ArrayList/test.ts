@@ -82,6 +82,7 @@ function test_array_push(loopCount: number) {
     console.log(`!${test_id}: ${averageTime} ms`);
   }
   
+  //!end
   // 测试函数调用
   test_array_push(500000);
   test_array_splice_insert(50000);
