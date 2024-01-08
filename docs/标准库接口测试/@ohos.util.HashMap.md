@@ -148,3 +148,4 @@ function test_hasValue2(loopCount: number) {
 
 [Huawei Phone]: ../../device/#huawei-phone
 [Huawei Watch]: ../../device/#huawei-watch
+[node]: ../../device/#typescript

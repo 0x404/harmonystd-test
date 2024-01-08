@@ -82,3 +82,4 @@ function test_has(loopCount: number) {
 
 [Huawei Phone]: ../../device/#huawei-phone
 [Huawei Watch]: ../../device/#huawei-watch
+[node]: ../../device/#typescript

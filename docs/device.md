@@ -14,7 +14,7 @@
 | 操作系统      | 10.0.22621.2861 (Win11 22H2 2022 Update) |
 | DevEco Studio | devecostudio-windows-3.1.0.501           |
 
-## Type Script环境
+## TypeScript环境
 
 | 类型    | 信息          |
 | ------- | ------------- |

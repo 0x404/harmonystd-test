@@ -1,17 +1,18 @@
 # @ohos.util.List
-### @ohos.util.List.insert
+### @ohos.util.List.sort
 
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__insert)
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__sort)
 
-:keyboard: 测试用例 1: 测试List容器insert接口 
+:keyboard: 测试用例 1: 测试List容器sort接口 
 
 ```typescript
-function test_insert(loopCount: number) {
+function test_sort(loopCount: number) {
   let list = new List<number>();
-  const startTime = new Date();
-  for (let i = 0; i < loopCount; i++) {
-    list.insert(0,i);
+  for (let i = loopCount; i > 0; i--) {
+    list.add(i);
   }
+  const startTime = new Date();
+    list.sort((a: number, b: number) => a - b);
   const endTime = new Date();
   const executionTime = endTime.getTime() - startTime.getTime();
   const averageTime = executionTime / loopCount;
@@ -22,7 +23,7 @@ function test_insert(loopCount: number) {
 
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.036100 ms |
+| 测试用例 1 | [Huawei Phone] | 0.023360 ms |
 
 ### @ohos.util.List.remove
 
@@ -71,18 +72,18 @@ function test_remove2(loopCount: number) {
 | 测试用例 1 | [Huawei Phone] | 0.086740 ms |
 | 测试用例 2 | [Huawei Phone] | 0.000067 ms |
 
-### @ohos.util.List.add
+### @ohos.util.List.insert
 
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__add)
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__insert)
 
-:keyboard: 测试用例 1: 测试List容器add接口 
+:keyboard: 测试用例 1: 测试List容器insert接口 
 
 ```typescript
-function test_add(loopCount: number) {
+function test_insert(loopCount: number) {
   let list = new List<number>();
   const startTime = new Date();
   for (let i = 0; i < loopCount; i++) {
-    list.add(1);
+    list.insert(0,i);
   }
   const endTime = new Date();
   const executionTime = endTime.getTime() - startTime.getTime();
@@ -94,7 +95,7 @@ function test_add(loopCount: number) {
 
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.000106 ms |
+| 测试用例 1 | [Huawei Phone] | 0.036100 ms |
 
 ### @ohos.util.List.has
 
@@ -143,20 +144,19 @@ function test_has2(loopCount: number) {
 | 测试用例 1 | [Huawei Phone] | 0.140000 ms |
 | 测试用例 2 | [Huawei Phone] | 0.000063 ms |
 
-### @ohos.util.List.sort
+### @ohos.util.List.add
 
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__sort)
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__add)
 
-:keyboard: 测试用例 1: 测试List容器sort接口 
+:keyboard: 测试用例 1: 测试List容器add接口 
 
 ```typescript
-function test_sort(loopCount: number) {
+function test_add(loopCount: number) {
   let list = new List<number>();
-  for (let i = loopCount; i > 0; i--) {
-    list.add(i);
-  }
   const startTime = new Date();
-    list.sort((a: number, b: number) => a - b);
+  for (let i = 0; i < loopCount; i++) {
+    list.add(1);
+  }
   const endTime = new Date();
   const executionTime = endTime.getTime() - startTime.getTime();
   const averageTime = executionTime / loopCount;
@@ -167,7 +167,8 @@ function test_sort(loopCount: number) {
 
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.023360 ms |
+| 测试用例 1 | [Huawei Phone] | 0.000106 ms |
 
 [Huawei Phone]: ../../device/#huawei-phone
 [Huawei Watch]: ../../device/#huawei-watch
+[node]: ../../device/#typescript
