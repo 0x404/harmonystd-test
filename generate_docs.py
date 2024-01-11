@@ -4,6 +4,7 @@ from collections import defaultdict
 from pathlib import Path
 import os
 import re
+import pandas
 
 
 def icon(what: str):
@@ -237,10 +238,25 @@ def generate_ts_docs(doc_root: str):
         for api in api_documents:
             indexf.write(f"[{api}]: 标准库接口测试/{api}.md\n")
 
+def generate_llm_docs(doc_root: str): 
+    df = pandas.read_csv(os.path.join(doc_root, "generated_tests.csv"))
+    with open("./docs/llm.md", "w", encoding="utf-8") as llmf:
+        llmf.write("# 大模型生成测试用例 \n\n")
+        for _, row in df.iterrows():
+            llmf.write(f"### {row['package']}.{row['api']} \n\n")
+            code = row["generated_test_case"]
+            if not code.startswith("```"):
+                code = f"```typescript\n{code}"
+            if not code.endswith("```"):
+                code = f"{code}\n```\n\n"
+            llmf.write(code)
+
+
 
 def main():
     generate_arkts_docs("./testcases_arkts")
     generate_ts_docs("./testcases_ts")
+    generate_llm_docs("./llm")
 
 
 if __name__ == "__main__":
