@@ -286,6 +286,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大模型生成测试用例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -300,10 +320,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -314,8 +334,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             标准库接口测试
           </label>
@@ -395,6 +415,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ohosutildequeinsertend" class="md-nav__link">
+    <span class="md-ellipsis">
+      @ohos.util.Deque.insertEnd
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ohosutildequeinsertfront" class="md-nav__link">
     <span class="md-ellipsis">
       @ohos.util.Deque.insertFront
@@ -407,15 +436,6 @@
   <a href="#ohosutildequehas" class="md-nav__link">
     <span class="md-ellipsis">
       @ohos.util.Deque.has
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ohosutildequeinsertend" class="md-nav__link">
-    <span class="md-ellipsis">
-      @ohos.util.Deque.insertEnd
     </span>
   </a>
   
@@ -716,6 +736,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ohosutildequeinsertend" class="md-nav__link">
+    <span class="md-ellipsis">
+      @ohos.util.Deque.insertEnd
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ohosutildequeinsertfront" class="md-nav__link">
     <span class="md-ellipsis">
       @ohos.util.Deque.insertFront
@@ -728,15 +757,6 @@
   <a href="#ohosutildequehas" class="md-nav__link">
     <span class="md-ellipsis">
       @ohos.util.Deque.has
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ohosutildequeinsertend" class="md-nav__link">
-    <span class="md-ellipsis">
-      @ohos.util.Deque.insertEnd
     </span>
   </a>
   
@@ -761,6 +781,38 @@
 
 
 <h1 id="ohosutildeque">@ohos.util.Deque</h1>
+<h3 id="ohosutildequeinsertend">@ohos.util.Deque.insertEnd</h3>
+<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertEnd">官方API文档</a></p>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Deque容器insertEnd接口 </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_insert_end</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">deque</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Deque</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">deque</span><span class="p">.</span><span class="nx">insertEnd</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
+<td style="text-align: left;">0.036660 ms</td>
+</tr>
+</tbody>
+</table>
 <h3 id="ohosutildequeinsertfront">@ohos.util.Deque.insertFront</h3>
 <p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertFront">官方API文档</a></p>
 <p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Deque容器insertFront接口 </p>
@@ -846,38 +898,6 @@
 <td style="text-align: left;">测试用例 2</td>
 <td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
 <td style="text-align: left;">0.000067 ms</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ohosutildequeinsertend">@ohos.util.Deque.insertEnd</h3>
-<p><img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" title=":book:" /> <a href="https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertEnd">官方API文档</a></p>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Deque容器insertEnd接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">test_insert_end</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">deque</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Deque</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">deque</span><span class="p">.</span><span class="nx">insertEnd</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#huawei-phone">Huawei Phone</a></td>
-<td style="text-align: left;">0.036660 ms</td>
 </tr>
 </tbody>
 </table>

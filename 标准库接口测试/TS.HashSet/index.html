@@ -284,6 +284,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大模型生成测试用例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -298,10 +318,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -312,8 +332,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             标准库接口测试
           </label>
@@ -645,9 +665,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#setprototypedelete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set.prototype.delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setprototypeentries" class="md-nav__link">
     <span class="md-ellipsis">
       Set.prototype.entries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setprototypevalues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set.prototype.values
     </span>
   </a>
   
@@ -663,27 +701,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setprototypedelete" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set.prototype.delete
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#setprototypeforeach" class="md-nav__link">
     <span class="md-ellipsis">
       Set.prototype.forEach
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setprototypevalues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set.prototype.values
     </span>
   </a>
   
@@ -741,9 +761,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#setprototypedelete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set.prototype.delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setprototypeentries" class="md-nav__link">
     <span class="md-ellipsis">
       Set.prototype.entries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setprototypevalues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set.prototype.values
     </span>
   </a>
   
@@ -759,27 +797,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setprototypedelete" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set.prototype.delete
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#setprototypeforeach" class="md-nav__link">
     <span class="md-ellipsis">
       Set.prototype.forEach
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setprototypevalues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set.prototype.values
     </span>
   </a>
   
@@ -813,6 +833,40 @@
 
 
 <h1 id="tshashset">TS.HashSet</h1>
+<h3 id="setprototypedelete">Set.prototype.delete</h3>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器delete接口 </p>
+<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_remove</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Set</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.000042 ms</td>
+</tr>
+</tbody>
+</table>
 <h3 id="setprototypeentries">Set.prototype.entries</h3>
 <p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器的entries接口，set长度为输入的loopCount </p>
 <p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_entries</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -844,6 +898,40 @@
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
 <td style="text-align: left;">0.000002 ms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setprototypevalues">Set.prototype.values</h3>
+<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器的values接口，set长度为输入的loopCount </p>
+<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_values</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Set</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">values</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">测试用例</th>
+<th style="text-align: left;">测试平台</th>
+<th style="text-align: left;">运行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">测试用例 1</td>
+<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
+<td style="text-align: left;">0.000004 ms</td>
 </tr>
 </tbody>
 </table>
@@ -902,40 +990,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="setprototypedelete">Set.prototype.delete</h3>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器delete接口 </p>
-<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_remove</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Set</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
-<td style="text-align: left;">0.000042 ms</td>
-</tr>
-</tbody>
-</table>
 <h3 id="setprototypeforeach">Set.prototype.forEach</h3>
 <p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器的forEach接口,set长度为500000 </p>
 <p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_forEach</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -968,40 +1022,6 @@
 <td style="text-align: left;">测试用例 1</td>
 <td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
 <td style="text-align: left;">1.400000 ms</td>
-</tr>
-</tbody>
-</table>
-<h3 id="setprototypevalues">Set.prototype.values</h3>
-<p><img alt="⌨" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" title=":keyboard:" /> 测试用例 1: 测试Set容器的values接口，set长度为输入的loopCount </p>
-<p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">test_set_values</span><span class="p">(</span><span class="nx">loopCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Set</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">set</span><span class="p">.</span><span class="nx">values</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">endTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">startTime</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">averageTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">executionTime</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">loopCount</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`!</span><span class="si">${</span><span class="nx">test_id</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">averageTime</span><span class="si">}</span><span class="sb"> ms`</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-</code></pre></div>
-<img alt="🕹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f579.svg" title=":joystick:" /> 测试结果</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">测试用例</th>
-<th style="text-align: left;">测试平台</th>
-<th style="text-align: left;">运行时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">测试用例 1</td>
-<td style="text-align: left;"><a href="../../device/#typescript">node</a></td>
-<td style="text-align: left;">0.000004 ms</td>
 </tr>
 </tbody>
 </table>
