@@ -1,0 +1,4901 @@
+package,api,url,prompt
+@ohos.util.Deque,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'Deque的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,insertFront,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertFront,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的insertFront API
+该API的描述为'在deque头部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertFront(""a"");
+deque.insertFront(1);
+let b = [1, 2, 3];
+deque.insertFront(b);
+let c = {name : ""Dylon"", age : ""13""};
+deque.insertFront(c);
+deque.insertFront(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,insertEnd,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertEnd,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的insertEnd API
+该API的描述为'在deque尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertEnd(""a"");
+deque.insertEnd(1);
+let b = [1, 2, 3];
+deque.insertEnd(b);
+let c = {name : ""Dylon"", age : ""13""};
+deque.insertEnd(c);
+deque.insertEnd(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此Deque中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+let result = deque.has(""squirrel"");
+deque.insertFront(""squirrel"");
+let result1 = deque.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,popFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__popFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的popFirst API
+该API的描述为'删除并返回双端队列的首元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertFront(2);
+deque.insertFront(4);
+deque.insertEnd(5);
+deque.insertFront(2);
+deque.insertFront(4);
+let result = deque.popFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,popLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__popLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的popLast API
+该API的描述为'删除并返回双端队列的尾元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertFront(2);
+deque.insertEnd(4);
+deque.insertFront(5);
+deque.insertFront(2);
+deque.insertFront(4);
+let result = deque.popLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertFront(2);
+deque.insertEnd(4);
+deque.insertFront(5);
+deque.insertEnd(4);
+deque.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,getFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__getFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的getFirst API
+该API的描述为'获取Deque实例中的头元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertEnd(2);
+deque.insertEnd(4);
+deque.insertFront(5);
+deque.insertFront(4);
+let result = deque.getFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Deque,getLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__getLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Deque，可以通过 `import ohos.util.Deque from @ohos.util.Deque`的方式导入该容器 
+你需要测试该容器的getLast API
+该API的描述为'获取Deque实例中的尾元素。'
+ 
+该API的使用示例为：API使用示例代码：let deque = new Deque();
+deque.insertFront(2);
+deque.insertFront(4);
+deque.insertFront(5);
+deque.insertFront(4);
+let result = deque.getLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'HashMap的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该HashMap是否为空。'
+ 
+该API的使用示例为：API使用示例代码：const hashMap = new HashMap();
+let result = hashMap.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,hasKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__hasKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的hasKey API
+该API的描述为'判断此HashMap中是否含有该指定key。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+let result = hashMap.hasKey(""squirrel"");
+hashMap.set(""squirrel"", 123);
+let result1 = hashMap.hasKey(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,hasValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__hasValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的hasValue API
+该API的描述为'判断此HashMap中是否含有该指定value。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+let result = hashMap.hasValue(123);
+hashMap.set(""squirrel"", 123);
+let result1 = hashMap.hasValue(123); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'获取指定key所对应的value。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let result = hashMap.get(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,setAll,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__setAll,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的setAll API
+该API的描述为'将一个HashMap中的所有元素组添加到另一个hashMap中。'
+该API的参数列表分别为：map(HashMap<K,): 是, 是否必须：False 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let newHashMap = new HashMap();
+hashMap.setAll(newHashMap); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,set,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__set,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的set API
+该API的描述为'向HashMap中添加一组数据。'
+该API的参数列表分别为：key(K): 添加成员数据的键名。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+let result = hashMap.set(""squirrel"", 123); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除指定key所对应元素。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let result = hashMap.remove(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除HashMap中的所有元素,并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+hashMap.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,keys,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__keys,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的keys API
+该API的描述为'返回包含此映射中包含的键的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let iter = hashMap.keys();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,values,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__values,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的values API
+该API的描述为'返回包含此映射中包含的键值的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let iter = hashMap.values();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,replace,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__replace,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的replace API
+该API的描述为'对HashMap中一组数据进行更新（替换）。'
+该API的参数列表分别为：key(K): 依据key指定替换的元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""sparrow"", 123);
+let result = hashMap.replace(""sparrow"", 357); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'通过回调函数来遍历HashMap实例对象上的元素以及元素对应的下标。'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""sparrow"", 123);
+hashMap.set(""gull"", 357);
+hashMap.forEach((value, key) => {
+    console.log(""value:"" + value, ""key:"" + key);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashMap,entries,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashmap-0000001478181697-V3#ZH-CN_TOPIC_0000001574248653__entries,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashMap，可以通过 `import ohos.util.HashMap from @ohos.util.HashMap`的方式导入该容器 
+你需要测试该容器的entries API
+该API的描述为'返回包含此映射中包含的键值对的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let hashMap = new HashMap();
+hashMap.set(""squirrel"", 123);
+hashMap.set(""sparrow"", 356);
+let iter = hashMap.entries();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""key:"" + temp[0]);
+  console.log(""value:"" + temp[1]);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'LinkedList的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'在LinkedList尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+let result = linkedList.add(""a"");
+let result1 = linkedList.add(1);
+let b = [1, 2, 3];
+let result2 = linkedList.add(b);
+let c = {name : ""Dylon"", age : ""13""};
+let result3 = linkedList.add(c);
+let result4 = linkedList.add(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,addFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__addFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的addFirst API
+该API的描述为'在LinkedList头部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.addFirst(""a"");
+linkedList.addFirst(1);
+let b = [1, 2, 3];
+linkedList.addFirst(b);
+let c = {name : ""Dylon"", age : ""13""};
+linkedList.addFirst(c);
+linkedList.addFirst(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,insert,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__insert,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的insert API
+该API的描述为'在长度范围内任意插入指定元素。'
+该API的参数列表分别为：element(T): 插入元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.insert(0, ""A"");
+linkedList.insert(1, 0);
+linkedList.insert(2, true); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此LinkedList中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+let result1 = linkedList.has(""squirrel"");
+linkedList.add(""squirrel"");
+let result = linkedList.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'根据下标获取LinkedList中的元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(1);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.get(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,getLastIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__getLastIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的getLastIndexOf API
+该API的描述为'返回指定元素最后一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(1);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.getLastIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,getIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__getIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的getIndexOf API
+该API的描述为'返回指定元素第一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(1);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.getIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,removeByIndex,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__removeByIndex,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的removeByIndex API
+该API的描述为'根据元素的下标值查找元素，返回元素后将其删除。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.removeByIndex(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,removeFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__removeFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的removeFirst API
+该API的描述为'删除并返回LinkedList的第一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.removeFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,removeLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__removeLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的removeLast API
+该API的描述为'删除并返回LinkedList的最后一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(2);
+linkedList.add(4);
+let result = linkedList.removeLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除查找到的第一个指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.remove(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,removeFirstFound,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__removeFirstFound,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的removeFirstFound API
+该API的描述为'删除第一次出现的指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.removeFirstFound(4); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,removeLastFound,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__removeLastFound,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的removeLastFound API
+该API的描述为'删除最后一次出现的指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.removeLastFound(4); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,clone,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__clone,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的clone API
+该API的描述为'克隆一个与LinkedList相同的实例，并返回克隆后的实例。修改克隆后的实例并不会影响原实例。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.clone(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+linkedList.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除LinkedList中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+linkedList.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,set,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__set,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的set API
+该API的描述为'将此LinkedList中指定位置的元素替换为指定元素。'
+该API的参数列表分别为：index(number): 查找的下标值。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.set(2, ""b""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,convertToArray,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__convertToArray,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的convertToArray API
+该API的描述为'把当前LinkedList实例转换成数组，并返回转换后的数组。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.convertToArray(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,getFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__getFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的getFirst API
+该API的描述为'获取LinkedList实例中的第一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+let result = linkedList.getFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.LinkedList,getLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-linkedlist-0000001427902748-V3#ZH-CN_TOPIC_0000001573928869__getLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.LinkedList，可以通过 `import ohos.util.LinkedList from @ohos.util.LinkedList`的方式导入该容器 
+你需要测试该容器的getLast API
+该API的描述为'获取LinkedList实例中的最后一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(5);
+linkedList.add(4);
+linkedList.getLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'List的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'在List尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+let result1 = list.add(""a"");
+let result2 = list.add(1);
+let b = [1, 2, 3];
+let result3 = list.add(b);
+let c = {name : ""Dylon"", age : ""13""};
+let result4 = list.add(c);
+let result5 = list.add(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,insert,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__insert,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的insert API
+该API的描述为'在长度范围内任意位置插入指定元素。'
+该API的参数列表分别为：element(T): 插入元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.insert(""A"", 0);
+list.insert(0, 1);
+list.insert(true, 2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此List中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+let result = list.has(""squirrel"");
+list.add(""squirrel"");
+let result1 = list.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'根据下标获取List中的元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(2);
+list.add(1);
+list.add(2);
+list.add(4);
+let result = list.get(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,getLastIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__getLastIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的getLastIndexOf API
+该API的描述为'查找指定元素最后一次出现的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(2);
+list.add(1);
+list.add(2);
+list.add(4);
+let result = list.getLastIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,getIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__getIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的getIndexOf API
+该API的描述为'查找指定元素第一次出现的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(2);
+list.add(1);
+list.add(2);
+list.add(4);
+list.getIndexOf(2);
+let result = list.getIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,equal,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__equal,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的equal API
+该API的描述为'比较指定对象与此List是否相等。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(2);
+let obj1 = new List();
+obj1.add(2);
+obj1.add(4);
+obj1.add(5);
+list.equal(obj1);
+let obj2 = {name : ""Dylon"", age : ""13""};
+let result = list.equal(obj2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,removeByIndex,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__removeByIndex,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的removeByIndex API
+该API的描述为'根据元素的下标值查找元素，返回元素后将其删除。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(2);
+list.add(4);
+let result = list.removeByIndex(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除查找到的第一个指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.remove(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,replaceAllElements,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__replaceAllElements,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的replaceAllElements API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+list.replaceAllElements((value: number, index: number) => {
+  return value = 2 * value;
+});
+list.replaceAllElements((value: number, index: number) => {
+  return value = value - 2;
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+list.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,sort,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__sort,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的sort API
+该API的描述为'对List中的元素进行一个排序操作。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+list.sort((a: number, b: number) => a - b); // 结果为升序排列
+list.sort((a: number, b: number) => b - a); // 结果为降序排列 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,getSubList,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__getSubList,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的getSubList API
+该API的描述为'根据下标截取List中的一段元素，并返回这一段List实例，包括起始值但不包括终止值。'
+该API的参数列表分别为：fromIndex(number): 起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.getSubList(2, 4);
+let result1 = list.getSubList(4, 3);
+let result2 = list.getSubList(2, 6); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除List中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+list.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,set,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__set,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的set API
+该API的描述为'将此 List 中指定位置的元素替换为指定元素。'
+该API的参数列表分别为：index(number): 查找的下标值。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+list.set(2, ""b""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,convertToArray,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__convertToArray,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的convertToArray API
+该API的描述为'把当前List实例转换成数组，并返回转换后的数组。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.convertToArray(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该List是否为空。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,getFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__getFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的getFirst API
+该API的描述为'获取List实例中的第一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.getFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.List,getLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-list-0000001428062020-V3#ZH-CN_TOPIC_0000001574128889__getLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.List，可以通过 `import ohos.util.List from @ohos.util.List`的方式导入该容器 
+你需要测试该容器的getLast API
+该API的描述为'获取List实例中的最后一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let list = new List();
+list.add(2);
+list.add(4);
+list.add(5);
+list.add(4);
+let result = list.getLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Queue,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Queue，可以通过 `import ohos.util.Queue from @ohos.util.Queue`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'Queue的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let queue = new Queue(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Queue,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Queue，可以通过 `import ohos.util.Queue from @ohos.util.Queue`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'在队列尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let queue = new Queue();
+let result = queue.add(""a"");
+let result1 = queue.add(1);
+let b = [1, 2, 3];
+let result2 = queue.add(b);
+let c = {name : ""Dylon"", age : ""13""};
+let result3 = queue.add(c); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Queue,pop,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045__pop,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Queue，可以通过 `import ohos.util.Queue from @ohos.util.Queue`的方式导入该容器 
+你需要测试该容器的pop API
+该API的描述为'删除头元素并返回该删除元素。'
+ 
+该API的使用示例为：API使用示例代码：let queue = new Queue();
+queue.add(2);
+queue.add(4);
+queue.add(5);
+queue.add(2);
+queue.add(4);
+let result = queue.pop(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Queue,getFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045__getFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Queue，可以通过 `import ohos.util.Queue from @ohos.util.Queue`的方式导入该容器 
+你需要测试该容器的getFirst API
+该API的描述为'获取队列的头元素。'
+ 
+该API的使用示例为：API使用示例代码：let queue = new Queue();
+queue.add(2);
+queue.add(4);
+queue.add(5);
+queue.add(2);
+let result = queue.getFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Queue,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-queue-0000001427745120-V3#ZH-CN_TOPIC_0000001573929045__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Queue，可以通过 `import ohos.util.Queue from @ohos.util.Queue`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let queue = new Queue();
+queue.add(2);
+queue.add(4);
+queue.add(5);
+queue.add(4);
+queue.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'Stack的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,push,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__push,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的push API
+该API的描述为'在栈顶插入元素，并返回该元素。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+let result = stack.push(""a"");
+let result1 = stack.push(1);
+let b = [1, 2, 3];
+let result2 = stack.push(b);
+let c = {name : ""Dylon"", age : ""13""};
+let result3 = stack.push(c); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,pop,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__pop,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的pop API
+该API的描述为'删除栈顶元素并返回该删除元素。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+stack.push(2);
+stack.push(4);
+stack.push(5);
+stack.push(2);
+stack.push(4);
+let result = stack.pop(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,peek,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__peek,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的peek API
+该API的描述为'获取并返回栈顶元素。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+stack.push(2);
+stack.push(4);
+stack.push(5);
+stack.push(2);
+let result = stack.peek(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,locate,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__locate,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的locate API
+该API的描述为'返回指定元素第一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+stack.push(2);
+stack.push(4);
+stack.push(5);
+stack.push(2);
+let result = stack.locate(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+stack.push(2);
+stack.push(4);
+stack.push(5);
+stack.push(4);
+stack.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Stack,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-stack-0000001478181701-V3#ZH-CN_TOPIC_0000001574128397__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Stack，可以通过 `import ohos.util.Stack from @ohos.util.Stack`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该栈是否为空。'
+ 
+该API的使用示例为：API使用示例代码：let stack = new Stack();
+stack.push(2);
+stack.push(4);
+stack.push(5);
+stack.push(4);
+let result = stack.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'Vector的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'在Vector中尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+let result = vector.add(""a"");
+let result1 = vector.add(1);
+let b = [1, 2, 3];
+let result2 = vector.add(b);
+let c = {name : ""Dylon"", age : ""13""};
+let result3 = vector.add(c); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,insert,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__insert,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的insert API
+该API的描述为'在长度范围内任意插入指定元素。'
+该API的参数列表分别为：element(T): 被插入的元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.insert(""A"", 0);
+vector.insert(0, 1);
+vector.insert(true, 2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此Vector中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+let result = vector.has(""squirrel"");
+vector.add(""squirrel"");
+let result1 = vector.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getIndexOf API
+该API的描述为'返回指定元素第一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(2);
+vector.add(1);
+vector.add(2);
+vector.add(4);
+let result = vector.getIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getLastIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getLastIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getLastIndexOf API
+该API的描述为'返回指定元素最后一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(2);
+vector.add(1);
+vector.add(2);
+vector.add(4);
+let result = vector.getLastIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,removeByIndex,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__removeByIndex,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的removeByIndex API
+该API的描述为'根据元素的下标值查找元素，返回元素后将其删除。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(2);
+vector.add(4);
+let result = vector.removeByIndex(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除查找到的第一个指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.remove(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,removeByRange,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__removeByRange,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的removeByRange API
+该API的描述为'从一段范围内删除元素，包括起始值但不包括终止值。'
+该API的参数列表分别为：fromIndex(number): 起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.removeByRange(2,4); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,replaceAllElements,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__replaceAllElements,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的replaceAllElements API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.replaceAllElements((value) => {
+    // 用户操作逻辑根据实际场景进行添加。
+    return value;
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,sort,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__sort,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的sort API
+该API的描述为'对Vector中的元素进行一个排序操作。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.sort((a: number, b: number) => a - b);
+vector.sort((a: number, b: number) => b - a);
+vector.sort(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,subVector,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__subVector,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的subVector API
+该API的描述为'根据下标截取Vector中的一段元素，并返回这一段vector实例，包括起始值但不包括终止值。'
+该API的参数列表分别为：fromIndex(number): 起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.add(6);
+vector.add(8);
+let result = vector.subVector(0,4);
+let result1 = vector.subVector(2,4); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除Vector中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,clone,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__clone,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的clone API
+该API的描述为'克隆一个与Vector相同的实例，并返回克隆后的实例。修改克隆后的实例并不会影响原实例。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.clone(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getCapacity,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getCapacity,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getCapacity API
+该API的描述为'获取当前实例的容量大小。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.getCapacity(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,convertToArray,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__convertToArray,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的convertToArray API
+该API的描述为'把当前Vector实例转换成数组，并返回转换后的数组。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.convertToArray(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该Vector是否为空。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,increaseCapacityTo,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__increaseCapacityTo,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的increaseCapacityTo API
+该API的描述为'如果传入的新容量大于或等于Vector中的元素个数，将容量变更为新容量。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.increaseCapacityTo(2);
+vector.increaseCapacityTo(12); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,trimToCurrentLength,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__trimToCurrentLength,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的trimToCurrentLength API
+该API的描述为'把容量限制为当前的length大小。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.trimToCurrentLength(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,toString,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__toString,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的toString API
+该API的描述为'用"",""将Vector实例中的元素按顺序拼接成字符串。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.toString(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,copyToArray,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__copyToArray,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的copyToArray API
+该API的描述为'将Vector实例中的元素按照下标复制到指定数组。'
+ 
+该API的使用示例为： 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getFirstElement,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getFirstElement,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getFirstElement API
+该API的描述为'获取实例中的第一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.getFirstElement(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getLastElement,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getLastElement,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getLastElement API
+该API的描述为'获取Vector实例中的最后一个元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.getLastElement(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getLastIndexFrom,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getLastIndexFrom,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getLastIndexFrom API
+该API的描述为'从指定索引向后搜索，返回该元素的下标索引。'
+该API的参数列表分别为：element(T): 要查找的元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.add(""a"");
+let result = vector.getLastIndexFrom(4,3); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,getIndexFrom,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__getIndexFrom,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的getIndexFrom API
+该API的描述为'从指定索引向前搜索，返回该元素的下标索引。'
+该API的参数列表分别为：element(T): 要查找的元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.add(""a"");
+let result = vector.getIndexFrom(4, 3); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,setLength,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__setLength,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的setLength API
+该API的描述为'设置Vector实例的元素个数。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+vector.setLength(8);
+vector.setLength(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'根据下标值获取Vector实例中的元素。'
+ 
+该API的使用示例为：API使用示例代码：let vector = new Vector();
+vector.add(2);
+vector.add(4);
+vector.add(5);
+vector.add(4);
+let result = vector.get(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.Vector,set,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-vector-0000001477981485-V3#ZH-CN_TOPIC_0000001523488906__set,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.Vector，可以通过 `import ohos.util.Vector from @ohos.util.Vector`的方式导入该容器 
+你需要测试该容器的set API
+该API的描述为'将此Vector中指定位置的元素替换为指定元素。'
+该API的参数列表分别为：index(number): 查找的下标值。, 是否必须：True 
+该API的使用示例为： 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'PlainArray的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该容器是否为空。'
+ 
+该API的使用示例为：API使用示例代码：const plainArray = new PlainArray();
+let result = plainArray.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此容器中是否含有该指定key。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.has(1);
+plainArray.add(1, ""squirrel"");
+let result1 = plainArray.has(1); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'获取指定key所对应的value。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.get(1); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,getIndexOfKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__getIndexOfKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的getIndexOfKey API
+该API的描述为'查找指定key对应的下标值，如果没有找到该key返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.getIndexOfKey(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,getIndexOfValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__getIndexOfValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的getIndexOfValue API
+该API的描述为'查找指定value元素第一次出现的下标值，如果没有找到该value元素返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.getIndexOfValue(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,getKeyAt,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__getKeyAt,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的getKeyAt API
+该API的描述为'查找指定下标元素键值对中的key值。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.getKeyAt(1); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,getValueAt,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__getValueAt,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的getValueAt API
+该API的描述为'查找指定下标元素键值对中的Value值，失败返回undefined。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.getValueAt(1); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,clone,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__clone,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的clone API
+该API的描述为'克隆一个实例，并返回克隆后的实例。修改克隆后的实例并不会影响原实例。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let newPlainArray = plainArray.clone(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'向容器中添加一组数据。'
+该API的参数列表分别为：key(number): 添加成员数据的键名。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除指定key对应的键值对。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.remove(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,removeAt,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__removeAt,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的removeAt API
+该API的描述为'删除指定下标对应的元素。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.removeAt(1); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,removeRangeFrom,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__removeRangeFrom,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的removeRangeFrom API
+该API的描述为'删除一定范围内的元素。'
+该API的参数列表分别为：index(number): 删除元素的起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.removeRangeFrom(1, 3); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,setValueAt,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__setValueAt,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的setValueAt API
+该API的描述为'替换容器中指定下标对应键值对中的键值。'
+该API的参数列表分别为：index(number): 指定替换数据下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+plainArray.setValueAt(1, 3546); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,toString,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__toString,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的toString API
+该API的描述为'获取包含容器中所有键和值的字符串。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+let result = plainArray.toString(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除容器中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+plainArray.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.PlainArray,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-plainarray-0000001427585160-V3#ZH-CN_TOPIC_0000001523488470__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.PlainArray，可以通过 `import ohos.util.PlainArray from @ohos.util.PlainArray`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'通过回调函数来遍历实例对象上的元素以及元素对应的下标。'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let plainArray = new PlainArray();
+plainArray.add(1, ""squirrel"");
+plainArray.add(2, ""sparrow"");
+plainArray.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'TreeMap的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该容器是否为空。'
+ 
+该API的使用示例为：API使用示例代码：const treeMap = new TreeMap();
+let result = treeMap.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,hasKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__hasKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的hasKey API
+该API的描述为'判断此容器中是否含有该指定key。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+let result = treeMap.hasKey(""squirrel"");
+treeMap.set(""squirrel"", 123);
+let result1 = treeMap.hasKey(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,hasValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__hasValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的hasValue API
+该API的描述为'判断此容器中是否含有该指定value。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+let result = treeMap.hasValue(123);
+treeMap.set(""squirrel"", 123);
+let result1 = treeMap.hasValue(123); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,get,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__get,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的get API
+该API的描述为'获取指定key所对应的value。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let result = treeMap.get(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,getFirstKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__getFirstKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的getFirstKey API
+该API的描述为'获取容器中排序第一的key。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let result = treeMap.getFirstKey(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,getLastKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__getLastKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的getLastKey API
+该API的描述为'获取容器中排序最后的key。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let result = treeMap.getLastKey(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,setAll,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__setAll,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的setAll API
+该API的描述为'将一个TreeMap中的所有元素组添加到另一个TreeMap中。'
+该API的参数列表分别为：map(TreeMap<K,): 是, 是否必须：False 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let map = new TreeMap();
+map.set(""demo"", 12);
+map.setAll(treeMap); // 将treeMap中的所有元素添加到map中
+map.forEach((value, key) => {
+    console.log(""value"" + value, ""key"" + key); // 打印结果 12 demo、356 sparrow、123 squirrel
+}) 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,set,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__set,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的set API
+该API的描述为'向容器中添加一组数据。'
+该API的参数列表分别为：key(K): 添加成员数据的键名。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除指定key对应的元素。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+treeMap.remove(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,getLowerKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__getLowerKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的getLowerKey API
+该API的描述为'获取容器中比传入key排序靠前一位的key。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+treeMap.set(""gander"", 356);
+let result = treeMap.getLowerKey(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,getHigherKey,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__getHigherKey,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的getHigherKey API
+该API的描述为'获取容器中比传入key排序靠后一位的key。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+treeMap.set(""gander"", 356);
+let result = treeMap.getHigherKey(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,replace,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__replace,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的replace API
+该API的描述为'对容器中一组数据进行更新（替换）。'
+该API的参数列表分别为：key(K): 指定key。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""sparrow"", 123);
+let result = treeMap.replace(""sparrow"", 357); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除容器中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+treeMap.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,keys,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__keys,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的keys API
+该API的描述为'返回包含此映射中包含的键的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let iter = treeMap.keys();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,values,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__values,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的values API
+该API的描述为'返回包含此映射中键值的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let iter = treeMap.values();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'通过回调函数来遍历实例对象上的元素以及元素对应的下标。'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""sparrow"", 123);
+treeMap.set(""gull"", 357);
+treeMap.forEach((value, key) => {
+    console.log(""value:"" + value, ""key:"" + key);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeMap,entries,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treemap-0000001478341441-V3#ZH-CN_TOPIC_0000001523488482__entries,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeMap，可以通过 `import ohos.util.TreeMap from @ohos.util.TreeMap`的方式导入该容器 
+你需要测试该容器的entries API
+该API的描述为'返回包含此映射中键值对的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let treeMap = new TreeMap();
+treeMap.set(""squirrel"", 123);
+treeMap.set(""sparrow"", 356);
+let iter = treeMap.entries();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""key:"" + temp[0]);
+  console.log(""value:"" + temp[1]);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'TreeSet的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该容器是否为空。'
+ 
+该API的使用示例为：API使用示例代码：const treeSet = new TreeSet();
+let result = treeSet.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此容器中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.has(123);
+treeSet.add(123);
+let result1 = treeSet.has(123); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,getFirstValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__getFirstValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的getFirstValue API
+该API的描述为'获取容器中排序第一的数据。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let result = treeSet.getFirstValue(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,getLastValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__getLastValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的getLastValue API
+该API的描述为'获取容器中排序最后的数据。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let result = treeSet.getLastValue(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'向容器中添加一组数据。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+let result = treeSet.add(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let result = treeSet.remove(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,getLowerValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__getLowerValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的getLowerValue API
+该API的描述为'获取容器中比传入元素排序靠前一位的元素。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+treeSet.add(""gander"");
+let result = treeSet.getLowerValue(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,getHigherValue,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__getHigherValue,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的getHigherValue API
+该API的描述为'获取容器中比传入元素排序靠后一位的元素。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+treeSet.add(""gander"");
+let result = treeSet.getHigherValue(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,popFirst,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__popFirst,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的popFirst API
+该API的描述为'删除容器中排序最前的数据。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let result = treeSet.popFirst(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,popLast,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__popLast,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的popLast API
+该API的描述为'删除容器中排序最后的数据。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let result = treeSet.popLast(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除容器中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+treeSet.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,values,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__values,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的values API
+该API的描述为'返回包含此映射中键值的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let iter = treeSet.values();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'通过回调函数来遍历实例对象上的元素以及元素对应的下标。'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""sparrow"");
+treeSet.add(""gull"");
+treeSet.forEach((value, key) => {
+    console.log(""value:"" + value, ""key:"" + key);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.TreeSet,entries,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-treeset-0000001478061981-V3#ZH-CN_TOPIC_0000001574248293__entries,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.TreeSet，可以通过 `import ohos.util.TreeSet from @ohos.util.TreeSet`的方式导入该容器 
+你需要测试该容器的entries API
+该API的描述为'返回包含此映射中键值对的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let treeSet = new TreeSet();
+treeSet.add(""squirrel"");
+treeSet.add(""sparrow"");
+let iter = treeSet.entries();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""key:"" + temp[0]);
+  console.log(""value:"" + temp[1]);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'ArrayList的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'在ArrayList尾部插入元素。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+let result = arrayList.add(""a"");
+let result1 = arrayList.add(1);
+let b = [1, 2, 3];
+let result2 = arrayList.add(b);
+let c = {name: ""Dylon"", age: ""13""};
+let result3 = arrayList.add(c);
+let result4 = arrayList.add(false); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,insert,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__insert,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的insert API
+该API的描述为'在长度范围内任意位置插入指定元素。'
+该API的参数列表分别为：element(T): 被插入的元素。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.insert(""A"", 0);
+arrayList.insert(0, 1);
+arrayList.insert(true, 2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此ArrayList中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+let result = arrayList.has(""squirrel"");
+arrayList.add(""squirrel"");
+let result1 = arrayList.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,getIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__getIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的getIndexOf API
+该API的描述为'返回指定元素第一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(2);
+arrayList.add(1);
+arrayList.add(2);
+arrayList.add(4);
+let result = arrayList.getIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,getLastIndexOf,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__getLastIndexOf,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的getLastIndexOf API
+该API的描述为'返回指定元素最后一次出现时的下标值，查找失败返回-1。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(2);
+arrayList.add(1);
+arrayList.add(2);
+arrayList.add(4);
+let result = arrayList.getLastIndexOf(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,removeByIndex,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__removeByIndex,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的removeByIndex API
+该API的描述为'根据元素的下标值查找元素，返回元素后将其删除。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(2);
+arrayList.add(4);
+let result = arrayList.removeByIndex(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除查找到的第一个指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result = arrayList.remove(2); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,removeByRange,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__removeByRange,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的removeByRange API
+该API的描述为'从一段范围内删除元素，包括起始值但不包括终止值。'
+该API的参数列表分别为：fromIndex(number): 起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.removeByRange(2, 4); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,replaceAllElements,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__replaceAllElements,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的replaceAllElements API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.replaceAllElements((value) => {
+    // 用户操作逻辑根据实际场景进行添加。
+    return value;
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'thisArg?: Object): void'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.forEach((value, index) => {
+    console.log(""value:"" + value, ""index:"" + index);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,sort,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__sort,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的sort API
+该API的描述为'对ArrayList中的元素排序。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.sort((a: number, b: number) => a - b);
+arrayList.sort((a: number, b: number) => b - a);
+arrayList.sort(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,subArrayList,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__subArrayList,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的subArrayList API
+该API的描述为'根据下标截取ArrayList中的一段元素，并返回这一段ArrayList实例，包括起始值但不包括终止值。'
+该API的参数列表分别为：fromIndex(number): 起始下标。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result1 = arrayList.subArrayList(2, 4);
+let result2 = arrayList.subArrayList(4, 3);
+let result3 = arrayList.subArrayList(2, 6); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除ArrayList中的所有元素，并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,clone,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__clone,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的clone API
+该API的描述为'克隆一个与ArrayList相同的实例，并返回克隆后的实例。修改克隆后的实例并不会影响原实例。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result = arrayList.clone(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,getCapacity,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__getCapacity,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的getCapacity API
+该API的描述为'获取当前实例的容量大小。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result = arrayList.getCapacity(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,convertToArray,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__convertToArray,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的convertToArray API
+该API的描述为'把当前ArrayList实例转换成数组，并返回转换后的数组。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result = arrayList.convertToArray(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该ArrayList是否为空。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+let result = arrayList.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,increaseCapacityTo,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__increaseCapacityTo,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的increaseCapacityTo API
+该API的描述为'如果传入的新容量大于或等于ArrayList中的元素个数，将容量变更为新容量。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.increaseCapacityTo(2);
+arrayList.increaseCapacityTo(8); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.ArrayList,trimToCurrentLength,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__trimToCurrentLength,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.ArrayList，可以通过 `import ohos.util.ArrayList from @ohos.util.ArrayList`的方式导入该容器 
+你需要测试该容器的trimToCurrentLength API
+该API的描述为'把容量限制为当前的length大小。'
+ 
+该API的使用示例为：API使用示例代码：let arrayList = new ArrayList();
+arrayList.add(2);
+arrayList.add(4);
+arrayList.add(5);
+arrayList.add(4);
+arrayList.trimToCurrentLength(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,constructor,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__constructor,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的constructor API
+该API的描述为'HashSet的构造函数。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,isEmpty,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__isEmpty,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的isEmpty API
+该API的描述为'判断该HashSet是否为空。'
+ 
+该API的使用示例为：API使用示例代码：const hashSet = new HashSet();
+let result = hashSet.isEmpty(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,has,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__has,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的has API
+该API的描述为'判断此HashSet中是否含有该指定元素。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+let result = hashSet.has(""squirrel"");
+hashSet.add(""squirrel"");
+let result1 = hashSet.has(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,add,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__add,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的add API
+该API的描述为'向HashSet中添加数据。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+let result = hashSet.add(""squirrel""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,remove,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__remove,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的remove API
+该API的描述为'删除指定的元素。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+hashSet.add(""squirrel"");
+hashSet.add(""sparrow"");
+let result = hashSet.remove(""sparrow""); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,clear,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__clear,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的clear API
+该API的描述为'清除HashSet中的所有元素,并把length置为0。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+hashSet.add(""squirrel"");
+hashSet.add(""sparrow"");
+hashSet.clear(); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,values,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__values,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的values API
+该API的描述为'返回包含此映射中包含的键值的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+hashSet.add(""squirrel"");
+hashSet.add(""sparrow"");
+let iter = hashSet.values();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""value:"" + temp);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,forEach,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__forEach,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的forEach API
+该API的描述为'通过回调函数来遍历实例对象上的元素以及元素对应的下标。'
+该API的参数列表分别为：callbackFn(function): 回调函数。, 是否必须：True 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+hashSet.add(""sparrow"");
+hashSet.add(""squirrel"");
+hashSet.forEach((value, key) => {
+    console.log(""value:"" + value, ""key:"" + key);
+}); 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
+@ohos.util.HashSet,entries,https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__entries,"请为该TypeScript容器生成测试用例（只返回生成的代码），你需要测试的容器为：ohos.util.HashSet，可以通过 `import ohos.util.HashSet from @ohos.util.HashSet`的方式导入该容器 
+你需要测试该容器的entries API
+该API的描述为'返回包含此映射中包含的键值对的新迭代器对象。'
+ 
+该API的使用示例为：API使用示例代码：let hashSet = new HashSet();
+hashSet.add(""squirrel"");
+hashSet.add(""sparrow"");
+let iter = hashSet.entries();
+let temp = iter.next().value;
+while(temp != undefined) {
+  console.log(""key:"" + temp[0]);
+  console.log(""value:"" + temp[1]);
+  temp = iter.next().value;
+} 
+你需要为该API生成一个测试函数，该函数对API进行测试并计算API的运行时间，一个可能的测试用例如下所示：
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+
+"
