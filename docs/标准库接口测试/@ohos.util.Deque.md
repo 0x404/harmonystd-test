@@ -1,4 +1,29 @@
 # @ohos.util.Deque
+### @ohos.util.Deque.insertEnd
+
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertEnd)
+
+:keyboard: 测试用例 1: 测试Deque容器insertEnd接口 
+
+```typescript
+function test_insert_end(loopCount: number) {
+  let deque = new Deque<number>();
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    deque.insertEnd(1);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+```
+:joystick: 测试结果
+
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.036660 ms |
+
 ### @ohos.util.Deque.insertFront
 
 :book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertFront)
@@ -70,31 +95,6 @@ function test_has2(loopCount: number) {
 |:-------|:---------------|:------------|
 | 测试用例 1 | [Huawei Phone] | 0.717333 ms |
 | 测试用例 2 | [Huawei Phone] | 0.000067 ms |
-
-### @ohos.util.Deque.insertEnd
-
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-deque-0000001427745116-V3#ZH-CN_TOPIC_0000001523648606__insertEnd)
-
-:keyboard: 测试用例 1: 测试Deque容器insertEnd接口 
-
-```typescript
-function test_insert_end(loopCount: number) {
-  let deque = new Deque<number>();
-  const startTime = new Date();
-  for (let i = 0; i < loopCount; i++) {
-    deque.insertEnd(1);
-  }
-  const endTime = new Date();
-  const executionTime = endTime.getTime() - startTime.getTime();
-  const averageTime = executionTime / loopCount;
-  console.log(`!${test_id}: ${averageTime} ms`);
-}
-```
-:joystick: 测试结果
-
-| 测试用例   | 测试平台           | 运行时间        |
-|:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.036660 ms |
 
 [Huawei Phone]: ../../device/#huawei-phone
 [Huawei Watch]: ../../device/#huawei-watch

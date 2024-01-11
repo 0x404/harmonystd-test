@@ -1,29 +1,4 @@
 # @ohos.util.ArrayList
-### @ohos.util.ArrayList.add
-
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__add)
-
-:keyboard: 测试用例 1: 测试ArrayList容器add接口 
-
-```typescript
-function test_add(loopCount: number) {
-  let list = new ArrayList<number>();
-  const startTime = new Date();
-  for (let i = 0; i < loopCount; i++) {
-    list.add(1);
-  }
-  const endTime = new Date();
-  const executionTime = endTime.getTime() - startTime.getTime();
-  const averageTime = executionTime / loopCount;
-  console.log(`!${test_id}: ${averageTime} ms`);
-}
-```
-:joystick: 测试结果
-
-| 测试用例   | 测试平台           | 运行时间        |
-|:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.000168 ms |
-
 ### @ohos.util.ArrayList.has
 
 :book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__has)
@@ -95,6 +70,31 @@ function test_insert(loopCount: number) {
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
 | 测试用例 1 | [Huawei Phone] | 0.000100 ms |
+
+### @ohos.util.ArrayList.add
+
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-arraylist-0000001427585156-V3#ZH-CN_TOPIC_0000001523488842__add)
+
+:keyboard: 测试用例 1: 测试ArrayList容器add接口 
+
+```typescript
+function test_add(loopCount: number) {
+  let list = new ArrayList<number>();
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    list.add(1);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+```
+:joystick: 测试结果
+
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.000168 ms |
 
 [Huawei Phone]: ../../device/#huawei-phone
 [Huawei Watch]: ../../device/#huawei-watch

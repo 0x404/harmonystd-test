@@ -1,19 +1,19 @@
 # @ohos.util.HashSet
-### @ohos.util.HashSet.remove
+### @ohos.util.HashSet.entries
 
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__remove)
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__entries)
 
-:keyboard: 测试用例 1: 测试HashSet容器remove接口 
+:keyboard: 测试用例 1: 测试HashSet容器的entries接口，set长度为输入的loopCount 
 
 ```typescript
-function test_remove(loopCount: number) {
+function test_entries(loopCount: number) {
   let set = new HashSet<number>();
   for (let i = 0; i < loopCount; i++) {
     set.add(i);
   }
   const startTime = new Date();
   for (let i = 0; i < loopCount; i++) {
-    set.remove(i);
+    set.entries();
   }
   const endTime = new Date();
   const executionTime = endTime.getTime() - startTime.getTime();
@@ -25,32 +25,7 @@ function test_remove(loopCount: number) {
 
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.000138 ms |
-
-### @ohos.util.HashSet.add
-
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__add)
-
-:keyboard: 测试用例 1: 测试HashSet容器add接口 
-
-```typescript
-function test_add(loopCount: number) {
-  let set = new HashSet<number>();
-  const startTime = new Date();
-  for (let i = 0; i < loopCount; i++) {
-    set.add(1);
-  }
-  const endTime = new Date();
-  const executionTime = endTime.getTime() - startTime.getTime();
-  const averageTime = executionTime / loopCount;
-  console.log(`!${test_id}: ${averageTime} ms`);
-}
-```
-:joystick: 测试结果
-
-| 测试用例   | 测试平台           | 运行时间        |
-|:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.000288 ms |
+| 测试用例 1 | [Huawei Phone] | 0.001540 ms |
 
 ### @ohos.util.HashSet.forEach
 
@@ -81,6 +56,59 @@ function test_forEach(loopCount: number) {
 |:-------|:---------------|:-------------|
 | 测试用例 1 | [Huawei Phone] | 63.176667 ms |
 
+### @ohos.util.HashSet.add
+
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__add)
+
+:keyboard: 测试用例 1: 测试HashSet容器add接口 
+
+```typescript
+function test_add(loopCount: number) {
+  let set = new HashSet<number>();
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(1);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+```
+:joystick: 测试结果
+
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.000288 ms |
+
+### @ohos.util.HashSet.remove
+
+:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__remove)
+
+:keyboard: 测试用例 1: 测试HashSet容器remove接口 
+
+```typescript
+function test_remove(loopCount: number) {
+  let set = new HashSet<number>();
+  for (let i = 0; i < loopCount; i++) {
+    set.add(i);
+  }
+  const startTime = new Date();
+  for (let i = 0; i < loopCount; i++) {
+    set.remove(i);
+  }
+  const endTime = new Date();
+  const executionTime = endTime.getTime() - startTime.getTime();
+  const averageTime = executionTime / loopCount;
+  console.log(`!${test_id}: ${averageTime} ms`);
+}
+```
+:joystick: 测试结果
+
+| 测试用例   | 测试平台           | 运行时间        |
+|:-------|:---------------|:------------|
+| 测试用例 1 | [Huawei Phone] | 0.000138 ms |
+
 ### @ohos.util.HashSet.values
 
 :book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__values)
@@ -108,34 +136,6 @@ function test_values(loopCount: number) {
 | 测试用例   | 测试平台           | 运行时间        |
 |:-------|:---------------|:------------|
 | 测试用例 1 | [Huawei Phone] | 0.000930 ms |
-
-### @ohos.util.HashSet.entries
-
-:book: [官方API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/js-apis-hashset-0000001478341437-V3#ZH-CN_TOPIC_0000001573929325__entries)
-
-:keyboard: 测试用例 1: 测试HashSet容器的entries接口，set长度为输入的loopCount 
-
-```typescript
-function test_entries(loopCount: number) {
-  let set = new HashSet<number>();
-  for (let i = 0; i < loopCount; i++) {
-    set.add(i);
-  }
-  const startTime = new Date();
-  for (let i = 0; i < loopCount; i++) {
-    set.entries();
-  }
-  const endTime = new Date();
-  const executionTime = endTime.getTime() - startTime.getTime();
-  const averageTime = executionTime / loopCount;
-  console.log(`!${test_id}: ${averageTime} ms`);
-}
-```
-:joystick: 测试结果
-
-| 测试用例   | 测试平台           | 运行时间        |
-|:-------|:---------------|:------------|
-| 测试用例 1 | [Huawei Phone] | 0.001540 ms |
 
 ### @ohos.util.HashSet.has
 
